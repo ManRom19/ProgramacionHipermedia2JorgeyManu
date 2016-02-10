@@ -1,0 +1,1147 @@
+
+/* ESTILOS GENERALES */
+
+h1,h2,h3,h4,h5,h6,li,ul,span,body,p,input, figure
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+ul
+{
+	list-style: none;
+}
+
+a:link, a:visited
+{
+	text-decoration: none;
+	color: black;
+}
+
+body
+{
+	background-color: #EEF;
+}
+
+img{ 
+   padding:1px;
+   background-color:black;
+   border: 1px solid black; 
+   border-radius:4px;
+   width:500px;
+   height:380px;
+}
+
+h2
+{
+	width: 500px;
+	border-bottom: 1px solid black;
+	margin-left: 30px;
+	margin-top: 10px;
+	font-family: 'Vollkorn', serif;
+	font-size: 24px;	
+}
+
+.botones
+{
+	padding: 5px;	
+	border: 1px solid black;
+	border-radius: 10px;
+    background-color: #DDF;	
+	font-size: 16px;
+	font-weight: bold;
+	font-family: 'Vollkorn', serif;
+}
+
+.botones:hover
+{
+	background-color: #BBE;
+	cursor: pointer;
+}
+
+/**************************************************************/
+/**************************************************************/
+/*************************  CABECERA  *************************/
+
+header
+{
+	margin: 0px auto;
+	width:100%;	
+	height: 100px;
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
+	background-image: url("../imagenes/cabecera.png");
+}
+
+header h1
+{
+	font-family: 'Gravitas One', cursive;				
+}	
+
+/* -500 ancho */
+@media screen and (max-width: 500px)
+{
+	header h1
+	{
+		padding-top: 5px;
+		padding-left: 5px;
+		font-size: 18px;
+		text-align: left;			
+	}
+}
+	
+/* +500 -800px ancho */
+@media screen and (max-width: 800px) and (min-width:500px)
+{
+	header h1
+	{
+		padding-top: 30px;
+		padding-right: 10px;
+		font-size: 32px;
+		text-align: right;			
+	}
+	
+}
+/* +800px ancho */
+@media screen and (min-width: 800px)
+{
+
+	header h1
+	{
+		padding-top: 20px;
+		font-size: 48px;
+		text-align: center;			
+	}
+}
+
+
+/******************************************************************/
+/******************************************************************/
+/**************************  MENU PRINCIPAL ***********************/
+
+
+/* +700px ancho */
+@media screen and (min-width: 700px)
+{
+	nav
+	{
+		width: 100%;
+		height: 40px;
+		
+		
+	}
+
+	nav ul
+	{
+		
+	}
+	nav li
+	{
+		display: inline;		
+		border-right: 3px solid black;
+		border-bottom: 3px solid black;
+		padding-left: 50px;
+		padding-right: 50px;
+		float:left;
+	}
+	
+	nav li:first-child
+	{
+		border-left: 3px solid black;
+	}
+	
+	nav li:hover
+	{
+		background-color: rgba(255,255,50,0.4);
+		
+	}
+	
+	nav li a
+	{
+		font-family: 'Vollkorn', serif;
+		font-size: 18px;
+		line-height: 175%;
+
+	}
+	
+}
+
+/* -700px ancho */
+@media screen and (max-width: 700px)
+{
+	nav
+	{
+		margin: 10px;
+		width: 120px;
+		height: 200px;	
+		
+	}
+	nav li
+	{
+		display: inline;	
+		float:left;
+		width: 125px;		
+		margin-top: 7px;
+		padding-left: 30px;
+		padding-right: 30px;
+		border: 3px solid black;
+		border-radius: 5px;
+		text-align: center;
+	}
+	
+	nav li:hover
+	{
+		background-color: rgba(255,255,50,0.4);		
+	}
+	
+	nav li a
+	{
+		font-family: 'Vollkorn', serif;
+		font-size: 18px;
+		line-height: 175%;
+	}	
+}
+
+/************************************************************************/
+/************************************************************************/
+/**********************  CONTENIDO PRINCIPAL  ***************************/
+
+main
+{
+	float: left;
+	overflow: hidden;
+	width: 100%;
+	margin: 0px auto;
+}
+
+
+
+/********************* 6 FOTOS DEL INDEX ********************************/
+/********************* **************************************************/
+
+/**************** ANIMACION **************************************/
+
+.indexfoto
+{
+	-webkit-transition: all 2s ease-in-out; /* Chrome, Safari, Opera */
+    transition: all 2s ease-in-out;
+	transform: rotateY(0deg);
+}
+
+.indexfoto:hover
+{
+	-webkit-transition: all 2s ease-in-out; /* Chrome, Safari, Opera */
+    transition: all 2s ease-in-out;
+	transform: rotateY(180deg) scale(0,0);
+	
+}
+
+.info
+{
+	position: relative;
+	
+	bottom:200px;
+	left:100px;
+}
+
+
+
+
+
+
+
+/******************** GALERIA *********************************/
+
+#fotos
+{
+	width: 100%;
+	overflow: hidden;
+}
+
+/* +1650px */
+@media screen and (min-width: 1650px)
+{
+	#fotos figure
+	{
+		text-align: center;
+		float: left;
+		width: 30%;
+		margin: 10px;
+	}
+	
+	#album
+	{
+		margin: 0px auto;
+		margin-left: 60px;
+	}
+}
+
+/* -1650 ancho +1220*/
+@media screen and (max-width: 1650px) and (min-width:1250px)
+{
+	#fotos figure
+	{
+		text-align: center;
+		float: left;
+		width: 40%;
+		margin: 10px;
+	}
+}
+
+	#album
+	{
+		margin: 0px auto;
+		margin-left: 60px;
+	}
+
+/* -1200 ancho +1200*/
+@media screen and (max-width: 1250px) and (min-width:650px)
+{
+	#fotos figure
+	{
+		text-align: center;
+		float: left;
+		width: 500px;
+		margin: 10px;
+	}
+	
+	#album
+	{
+		margin: 0px auto;
+		margin-left: 60px;
+	}	
+}
+
+@media screen and (max-width:650px)
+{
+	#fotos figure
+	{
+		text-align: center;
+		float: left;
+		width: 100%;
+		margin: 10px;
+	}
+	
+	#album
+	{
+		margin: 0px auto;
+		margin-left: 0px;
+	}	
+}
+
+#fotos figure img
+{
+	border: 2px solid black;
+	border-radius: 5px;
+}
+
+figcaption
+{
+	font-family: 'Vollkorn', serif;
+}
+
+
+
+
+
+
+/***************************************************************/
+/******************************************************************/
+/***************** COMENTARIOS *******************************/
+#comentarios
+{
+	width: 100%;
+	margin: 0px auto;
+	overflow: hidden;
+}
+
+.comen
+{
+	overflow: hidden;
+	float: left;
+	width: 400px;
+	height: 68px;
+	margin: 20px;
+	padding: 10px;
+	border: 2px solid black;
+	border-radius: 5px;
+	background-color: rgba(255,255,0,0.2);
+	
+}
+
+.comen ul li
+{
+	margin-bottom: 5px;
+}
+
+.comen ul li span
+{
+	font-size: 18px;
+}
+
+.comen ul li:last-child
+{
+	padding-top: 5px;
+	border-top: 1px solid;
+}
+
+.comen ul li:last-child span
+{
+	font-size: 16px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+
+
+/*****************************************************************/
+/***************************************************************/
+/********************* PAGINA DE LOGIN **************************/
+
+
+#login
+{
+	margin: 0px auto;
+	margin-top: 125px;
+	border: 2px solid black;
+	border-radius: 10px;
+	background-color:  rgba(255,255,0,0.2);
+	overflow: hidden;
+}
+
+#login input:focus
+{
+	border: 2px solid black;
+	border-color: black;
+}
+
+#login input:hover
+{
+	background-color: #BCF;
+}
+
+#login h2
+{
+	text-align: center;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	padding-top: 15px;
+	margin-bottom: 20px;
+}
+
+.login1, .login2
+{
+	font-family: 'Vollkorn', serif;
+	float: left;
+}
+
+.login1 input[type="text"], .login2 input[type="text"], .login1 input[type="password"], .login2 input[type="password"]
+{
+	height: 30px;
+	width: 250px;
+	margin-top: 3px;
+	font-size: 18px;
+	font-family: 'Vollkorn', serif;
+}
+
+#loginacceso
+{
+	height: 30px;
+}
+
+#loginacceso input
+{
+	margin-top: 0px;
+	margin-left: 175px;
+	margin-bottom: 3px;
+}
+
+.login1
+	{
+		width:39%;
+		
+		padding-right: 10px;
+		text-align: right;
+		font-size: 32px;
+	}
+
+.login2
+	{
+		width: 50%;
+	}
+
+
+@media screen and (min-width: 1150px)
+{
+	#login
+	{
+		width: 40%;
+	}
+	
+	.login1, .login2
+	{
+		float: left;
+		margin-top: 30px;
+		height: 75px;
+	}
+}
+
+@media screen and (max-width: 1250px) and (min-width:650px)
+{
+	#login
+	{
+		width: 70%;
+	}
+	
+	.login1, .login2
+	{
+		float: left;
+		margin-top: 30px;
+		height: 75px;
+	}
+}
+
+@media screen and (max-width: 650px)
+{
+	.login1, .login2
+	{
+		float: none;
+		margin-top: 10px;
+		height: 30px;
+	}
+	
+	.login2
+	{
+		margin-bottom: 10px;
+	}
+	
+	#formulario
+	{
+		width: 95%;
+		margin-top: 30px;
+	}
+}
+
+
+/************************* ***********************************/
+/********************  FORMULARIOS **************************/
+
+
+#formulario
+{
+	margin: 0px auto;
+	margin-top: 75px;
+	padding-bottom: 35px;
+	border: 2px solid black;
+	border-radius: 10px;
+	background-color:  rgba(255,255,0,0.2);
+	overflow: hidden;
+}
+
+#formulario input:focus, #formulario select:focus, #formulario textarea:focus
+{
+	border: 2px solid black;
+	border-color: black;
+}
+
+#formulario input:hover, #formulario select:hover, #formulario textarea:hover
+{
+	background-color: #BCF;
+}
+
+#formulario h2
+{
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+	padding-top: 15px;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.form1, .form2
+{
+	font-family: 'Vollkorn', serif;
+	float: left;
+}
+
+select
+{
+	height: 25px;
+	font-family: 'Vollkorn', serif;
+	font-size: 18px;
+	width:200px;
+}
+
+input[type="number"]
+{
+	height: 22px;
+	font-family: 'Vollkorn', serif;
+	font-size: 18px;
+	width:200px;
+}
+
+input[type="date"]
+{
+	height: 22px;
+	font-family: 'Vollkorn', serif;
+	font-size: 18px;
+	width:200px;
+}
+
+.form1 input[type="text"], .form2 input[type="text"], .form1 input[type="password"], .form2 input[type="password"]
+{
+	height: 20px;
+	width: 250px;
+	margin-top: 1px;
+	font-size: 18px;
+	font-family: 'Vollkorn', serif;
+}
+
+.form1
+	{
+		width:39%;	
+		padding-right: 10px;
+		text-align: right;
+		font-size: 18px;
+	}
+
+.form2
+	{
+		width: 50%;
+	}
+
+
+@media screen and (min-width: 1150px)
+{
+	#formulario
+	{
+		width: 500px;
+	}
+	
+	.form1, .form2
+	{
+		float: left;
+		margin-top: 0px;
+		height: 75px;
+	}
+}
+
+@media screen and (max-width: 1250px) and (min-width:650px)
+{
+	#formulario
+	{
+		width: 500px;
+	}
+	
+	.form1, .form2
+	{
+		float: left;
+		margin-top: 0px;
+		height: 75px;
+	}
+}
+
+@media screen and (max-width: 650px)
+{
+	.form1, .form2
+	{
+		float: none;
+		margin-top: 8px;
+		height: 30px;
+		text-align: left;
+	}
+	
+	.form2
+	{
+		margin-bottom: 10px;
+		padding: 0px;
+		margin: 0px;
+		margin-bottom: 10px;
+	}
+	
+	.form1
+	{
+		width: 200px;
+		
+	}
+	
+	#formulario
+	{
+		width: 96%;
+		margin-top: 30px;
+	}
+}
+
+
+/************************************************************/
+/******************* ESTRELLAS PARA LA DIFICULTAD **********/
+
+
+.estrellas
+{
+	display: inline;
+}
+.estrellas a 
+{
+	font-size: 20px;
+	color: black;
+}
+
+.estrellas:hover a {
+	color: rgba(255, 2, 2, 1);
+}
+
+.estrellas > a:hover ~ a {
+	color: black;
+}
+
+
+/********************************************************************/
+/*******************************************************************/
+/********************* PAGINA DE LA RUTA ***************************/
+
+#ruta
+{
+	padding-bottom: 15px;
+}
+
+@media screen and (min-width: 1835px)
+{
+
+	#ruta
+	{
+		margin: 0px auto;
+		margin-top: 75px;
+		padding: 15px;
+		border: 2px solid black;
+		border-radius: 10px;
+		background-color:  rgba(255,255,0,0.2);
+		overflow: hidden;
+		width: 90%;  
+	}
+
+	#ruta1
+	{
+		float: left;
+		width: 60%;
+		margin: 20px;
+	}
+
+	#ruta2
+	{
+		float: left;
+		width: 35.1%;
+		margin: 20px;
+	}
+
+	#ruta2 ul li 
+	{
+		height: 22px;
+		font-family: 'Vollkorn', serif;
+		font-size: 18px;
+		margin-bottom: 5px;
+	}
+
+	#ruta2 ul li:first-child
+	{	
+		height: 42px;
+		font-family: 'Vollkorn', serif;
+		font-size: 24px;
+		font-weight: bold;
+		border-bottom: 1px solid black;
+		margin-bottom: 5px;
+	}
+
+	#miniaturas
+	{
+		margin: 10px;
+		margin-top: 20px;
+	}
+
+	#miniaturas figure
+	{
+		float: left;
+		width: 200px;
+		margin: 30px;
+	}
+
+
+	#ruta1 img, #miniaturas figure img
+	{
+		border: 2px solid black;
+		border-radius: 5px;
+	}
+}
+
+@media screen and (max-width: 1835px) and (min-width: 1180px)
+
+/* ZONA MINIATURAS FOTOS */
+{
+
+	#ruta
+	{
+		margin: 0px auto;
+		margin-top: 75px;
+		border: 2px solid black;
+		border-radius: 10px;
+		background-color:  rgba(255,255,0,0.2);
+		overflow: hidden;
+		width: 90%;  
+	}
+
+	#ruta1
+	{
+		width: 60%;
+		margin: 0px auto;
+		margin: 20px;
+	}
+
+	#ruta2
+	{
+		width: 99%;
+		margin: 20px;
+	}
+
+	#ruta2 ul li 
+	{
+		height: 22px;
+		font-family: 'Vollkorn', serif;
+		font-size: 18px;
+		margin-bottom: 5px;
+	}
+
+	#ruta2 ul li:first-child
+	{	
+		height: 42px;
+		font-family: 'Vollkorn', serif;
+		font-size: 24px;
+		font-weight: bold;
+		border-bottom: 1px solid black;
+		margin-bottom: 5px;
+	}
+	
+	#miniaturas
+	{
+		margin: 10px;
+		margin-top: 20px;
+	}
+
+	#miniaturas figure
+	{
+		float: left;
+		width: 200px;
+		margin: 30px;
+	}
+
+
+	#ruta1 img, #miniaturas figure img
+	{
+		border: 2px solid black;
+		border-radius: 5px;
+	}
+
+}
+
+@media screen and (max-width: 1180px) and (min-width: 500px)
+{
+
+	#ruta
+	{
+		margin: 0px auto;
+		margin-top: 75px;
+		border: 2px solid black;
+		border-radius: 10px;
+		background-color:  rgba(255,255,0,0.2);
+		overflow: hidden;
+		width: 99%;  
+	}
+
+	#ruta1
+	{
+		float: left;
+		width: 500px;
+		margin: 20px;
+	}
+	
+	#ruta1 figure img
+	{
+		width: 479px;
+		height: 359px;
+	}
+
+	#ruta2
+	{
+		float: left;
+		width: 500px;
+		margin: 5px;
+	}
+
+	#ruta2 ul li 
+	{
+		height: 22px;
+		font-family: 'Vollkorn', serif;
+		font-size: 16px;
+		margin-bottom: 5px;
+	}
+
+	#ruta2 ul li:first-child
+	{	
+		height: 42px;
+		font-family: 'Vollkorn', serif;
+		font-size: 24px;
+		font-weight: bold;
+		border-bottom: 1px solid black;
+		margin-bottom: 5px;
+	}
+
+	#miniaturas
+	{
+		margin: 5px;
+		margin-top: 20px;
+	}
+
+	#miniaturas figure
+	{
+		float: left;
+		width: 200px;
+		margin: 10px;
+	}
+
+
+	#ruta1 img, #miniaturas figure img
+	{
+		border: 2px solid black;
+		border-radius: 5px;
+	}
+}
+
+@media screen and (max-width: 500px)
+{
+
+	#ruta
+	{
+		margin: 0px auto;
+		margin-top: 75px;
+		border: 2px solid black;
+		border-radius: 10px;
+		background-color:  rgba(255,255,0,0.2);
+		overflow: hidden;
+		width: 99%;  
+	}
+
+	#ruta1
+	{
+		float: left;
+		width: 500px;
+		margin: 20px;
+	}
+	
+	#ruta1 figure img
+	{
+		width: 250px;
+		height: 200px;
+	}
+
+	#ruta2
+	{
+		float: left;
+		width: 500px;
+		margin: 5px;
+	}
+
+	#ruta2 ul li 
+	{
+		height: 22px;
+		font-family: 'Vollkorn', serif;
+		font-size: 16px;
+		margin-bottom: 5px;
+	}
+
+	#ruta2 ul li:first-child
+	{	
+		height: 42px;
+		font-family: 'Vollkorn', serif;
+		font-size: 24px;
+		font-weight: bold;
+		border-bottom: 1px solid black;
+		margin-bottom: 5px;
+	}
+
+	#miniaturas
+	{
+		margin: 5px;
+		margin-top: 20px;
+	}
+
+	#miniaturas figure
+	{
+		width: 100px;
+		margin: 10px;
+	}
+
+
+	#ruta1 img, #miniaturas figure img
+	{
+		border: 2px solid black;
+		border-radius: 5px;
+	}
+}
+
+#comentarios
+{
+	width: 100%;
+	margin: 0px auto;
+	overflow: hidden;
+}
+
+
+.comen2
+{
+	overflow: hidden;
+	width: 95%;
+	margin: 10px;
+	padding: 10px;
+	border: 2px solid black;
+	border-radius: 5px;
+	background-color: rgba(255,255,0,0.2);
+	
+}
+
+.comen2 ul li
+{
+	margin-bottom: 5px;
+}
+
+.comen2 ul li span
+{
+	font-size: 18px;
+}
+
+.comen2 ul li:last-child
+{
+	padding-top: 5px;
+	border-top: 1px solid;
+}
+
+.comen2 ul li:last-child span
+{
+	font-size: 16px;
+	text-overflow: ellipsis;
+}
+
+/**************************************************************/
+/************************* ACERCA DE PAGINA **********************/
+
+#acerca
+{
+	width: 60%;
+	margin: 0px auto;
+	margin-top: 20px;
+	padding: 10px;
+	border: 2px solid black;
+	border-radius: 10px;
+	background-color:  rgba(255,255,0,0.2);
+	overflow: hidden;
+	
+}
+#acerca h2
+{
+	margin-bottom: 15px;
+}
+
+#acerca p
+{
+	margin: 10px;
+	font-family: 'Vollkorn', serif;
+	font-size: 16px;
+}
+
+
+/****************************************************************/
+/*****************	 web icons *********************************/
+
+@font-face {
+  font-family: 'home';
+  src: url('../fuentes/home.eot?35825422');
+  src: url('../fuentes/home.eot?35825422#iefix') format('embedded-opentype'),
+       url('../fuentes/home.woff?35825422') format('woff'),
+       url('../fuentes/home.ttf?35825422') format('truetype'),
+       url('../fuentes/home.svg?35825422#home') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'home';
+    src: url('../font/home.svg?35825422#home') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "home";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-home:before { content: '\e800'; } /* '' */
+.icon-picture-outline:before { content: '\e801'; } /* '' */
+.icon-eject-alt:before { content: '\e802'; } /* '' */
+.icon-flag:before { content: '\e803'; } /* '' */
+.icon-contacts:before { content: '\e804'; } /* '' */
+
+
+
+/****************************************************************/
+/*********************  PIE DE PAGINA ****************************/
+
+footer
+{
+	font-family: 'Vollkorn', serif;
+	float: left;
+	margin-top: 10px solid;
+	border-top: 2px solid;
+	border-bottom: 2px solid;
+	height: 45px;
+	width: 100%;
+	background-color: rgba(255,255,0,0.2);
+	margin-top: 200px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+
+
+
+
