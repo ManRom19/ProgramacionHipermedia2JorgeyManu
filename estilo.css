@@ -20,7 +20,8 @@ a:link, a:visited
 
 body
 {
-	background-color: #EEF;
+	background-color: #AAB;
+	color:#fff;
 }
 
 img{ 
@@ -70,13 +71,20 @@ header
 	height: 100px;
 	border-top: 3px solid black;
 	border-bottom: 3px solid black;
-	background-image: url("../imagenes/cabecera.png");
+	background:linear-gradient(#fff, #335486);
 }
 
 header h1
 {
-	font-family: 'Helvetica', sans-serif;				
-}	
+	font-family: 'Stardos Stencil', sans-serif;
+	color:black;				
+}
+
+header img{
+	background-color: transparent;
+	border-color: transparent;
+
+}
 
 /* -500 ancho */
 @media screen and (max-width: 500px)
@@ -88,6 +96,10 @@ header h1
 		font-size: 18px;
 		text-align: left;			
 	}
+	header img
+	{
+		display:none;
+	}
 }
 	
 /* +500 -800px ancho */
@@ -97,10 +109,18 @@ header h1
 	{
 		padding-top: 30px;
 		padding-right: 10px;
-		font-size: 32px;
-		text-align: right;			
+		font-size: 48px;
+		left: right;			
 	}
-	
+	header img {
+	position: relative;
+    display: block;
+    float:left;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60%;
+    width:10%;
+    top:25%; }
 }
 /* +800px ancho */
 @media screen and (min-width: 800px)
@@ -112,6 +132,15 @@ header h1
 		font-size: 48px;
 		text-align: center;			
 	}
+	header img {
+		position: relative;
+    display: block;
+    float:left;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60%;
+    width:10%;
+    top:25%; }
 }
 
 
@@ -362,11 +391,12 @@ figcaption
 	width: 400px;
 	height: 68px;
 	margin: 20px;
+	color:#FFF;
 	padding: 10px;
 	font-family: 'Helvetica', sans-serif;
 	border: 2px solid black;
 	border-radius: 5px;
-	background-color: rgba(255,255,0,0.2);
+	background-color: #999;
 	
 }
 
@@ -1136,7 +1166,8 @@ footer
 	border-bottom: 2px solid;
 	height: 45px;
 	width: 100%;
-	background-color: rgba(255,255,0,0.2);
+	color:#FFF;
+	background-color: #999;
 	margin-top: 200px;
 	padding-top: 10px;
 	padding-left: 10px;
